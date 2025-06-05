@@ -1,0 +1,80 @@
+const tracks = [
+  {
+    name: "Hay Là Chúng Ta Cứ Như Vậy Một Vạn Năm",
+    artist: "Hoàng Tiêu Vân | Trường Nguyệt Tẫn Minh OST",
+    artwork: "./media/cunhuvaymotvannam/1.jpg",
+    path: "./media/cunhuvaymotvannam/2.mp3",
+  },
+  {
+    name: "Vở Kịch Của Em x Vây Giữ REMIX",
+    artist: "Hồ Phong An x HuyN FT",
+    artwork: "./media/vokichcuaem/1.jpg",
+    path: "./media/vokichcuaem/2.mp3",
+  },
+  {
+    name: "Yêu Em Nhưng Không Với Tới x Vây Giữ REMIX",
+    artist: "DC Tâm x SS x AM Remix",
+    artwork: "./media/yeuemnhungkhongvoitoi/1.jpg",
+    path: "./media/yeuemnhungkhongvoitoi/2.mp3",
+  },
+  {
+    name: "Anh Đau Từ Lúc Em Đi",
+    artist: "Trần Mạnh Cường",
+    artwork: "./media/anhdautulucemdi/1.jpg",
+    path: "./media/anhdautulucemdi/2.mp3",
+  },
+    {
+    name: "Mạnh Bà lofi",
+    artist: "Linh Hương Luz",
+    artwork: "./media/manhba/1.jpg",
+    path: "./media/manhba/2.mp3",
+  },
+ {
+    name: "Thương Thì Thôi REMIX",
+    artist: "Jank",
+    artwork: "./media/thuongthithoi/1.jpg",
+    path: "./media/thuongthithoi/2.mp3",
+  },
+  {
+    name: "Ba Kiếp Tình Một Kiếp Duyên lofi",
+    artist: "Lâm Tuấn x MewMew lofi",
+    artwork: "./media/bakieptinhmotkiepduyen/1.jpg",
+    path: "./media/bakieptinhmotkiepduyen/2.mp3",
+  },
+ {
+    name: "Ải Hồng Nhan REMIX",
+    artist: "Cần Vinh x Lee Ken",
+    artwork: "./media/aihongnhan/1.jpg",
+    path: "./media/aihongnhan/2.mp3",
+  },
+  {
+    name: "Trả Lại Thanh Xuân Cho Em REMIX",
+    artist: "Mochiii x Domino Remix",
+    artwork: "./media/tralaithanhxuanchoem/1.jpg",
+    path: "./media/tralaithanhxuanchoem/2.mp3",
+  },
+  {
+    name: "Lời Hứa Hoa Đào",
+    artist: "旺仔小乔",
+    artwork: "./media/loihuahoadao/1.jpg",
+    path: "./media/loihuahoadao/2.mp3",
+  },
+  {
+    name: "",
+    artist: "",
+    artwork: "./media//1.jpg",
+    path: "./media//2.mp3",
+  },
+  {
+    name: "",
+    artist: "",
+    artwork: "./media//1.jpg",
+    path: "./media//2.mp3",
+  },
+  {
+    name: "",
+    artist: "",
+    artwork: "./media//1.jpg",
+    path: "./media//2.mp3",
+  },
+];
