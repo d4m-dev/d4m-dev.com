@@ -258,29 +258,11 @@ input::-webkit-slider-thumb {
   align-items: center;
   justify-content: center;
 }
- /* CSS cho phần chứa nút, sử dụng flexbox để căn chỉnh */
-.container {
-  display: flex;
-  justify-content: flex-end; /* Căn nút về phía bên phải */
-  margin-top: 0px;
-}
- /* CSS cho nút Download */
-.download {
-  padding: 0px 0px; /* Điều chỉnh khoảng cách bên trong nút */
-    }
-
-.download i {
-  font-size: 20px; /* Thay đổi kích thước icon */
-  margin-right: none; /* Khoảng cách giữa icon và chữ */
-}
 
 /* Nút hiển thị lời bài hát */
 .show-lyric {
   padding: 10px 20px;
   font-size: 16px;
-  cursor: pointer;
-  background-color: var(--background-color);
-  color: var(--main-color);
   border: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
@@ -314,29 +296,44 @@ input::-webkit-slider-thumb {
 .lyrics {
   position: fixed;
   top: 0;
-  left: -100%; /* Đặt phần tử ra ngoài màn hình hoàn toàn */
+  left: -100%;
   width: 300px;
   height: 100%;
-  background-color: #ffffff; /* Đảm bảo nền là màu trắng */
+  background-color: #ffffff;
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
   transition: left 0.5s ease-in-out;
   padding: 20px;
-  overflow-y: auto;  /* Cho phép cuộn dọc */
-  padding-top: 50px; /* Để nút không bị chồng lên */
-  z-index: 100; /* Đảm bảo phần này ở trên cùng */
+  overflow-y: auto;
+  padding-top: 50px;
+  z-index: 100;
 }
 
 .lyrics.open {
-  left: 0; /* Trượt vào khi có class 'open' */
+  left: 0;
 }
 
 .lyrics p {
   font-size: 18px;
   line-height: 1.6;
-  color: #333; /* Màu chữ cho dễ đọc */
+  color: #333; /* Màu chữ */
 }
 
 #lyrics-content {
   white-space: pre-wrap;  /* Giữ nguyên khoảng trắng và ngắt dòng */
   word-wrap: break-word;  /* Đảm bảo từ dài không bị tràn ra ngoài */
-} */
+}
+ /* CSS cho nút Download */
+.download {
+  padding: 0px 0px;
+    }
+
+.download i {
+  font-size: 20px;
+  margin-right: none;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0px;
+}
