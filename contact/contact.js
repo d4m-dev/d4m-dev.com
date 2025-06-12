@@ -64,7 +64,7 @@
   const links = [
     { href: "https://github.com/d4m-dev", text: "Github" },
     { href: "https://youtube.com/@d4m-dev", text: "Youtube" },
-    { href: "https://www.tiktok.com/@d4m-dev", text: "Tiktok" },
+    { href: "https://www.tiktok.com/@d4m_dev", text: "Tiktok" },
   ];
 
   const socialLinksDiv = document.createElement("div");
