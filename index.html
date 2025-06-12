@@ -8,9 +8,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
-    <!-- Liên kết đến tệp CSS riêng biệt -->
     <link rel="stylesheet" href="./css/style.css" />
-       <!-- social links for d4m-dev.github.io-->
+    <!-- social links for d4m-dev.github.io-->
     <script
       src="./contact/contact.js"
       defer
@@ -23,7 +22,7 @@
           <i class="bi bi-file-earmark-music"></i>
         </button>
 
-        <strong>Now Playing</strong>
+        <strong>Đang Phát</strong>
 
         <button class="show">
           <i class="bi bi-music-note-list"></i>
@@ -72,7 +71,7 @@
             <i class="bi bi-chevron-right"></i>
           </button>
 
-          <strong>My PlayList</strong>
+          <strong>Danh sách phát</strong>
         </div>
 
         <div class="playlist-content"></div>
@@ -86,16 +85,15 @@
 
       <!-- Phần hiển thị lời bài hát -->
       <div id="lyrics" class="lyrics">
-        <div>
+        <div class="lyric-header">
           <button class="hide-lyric" onclick="toggleLyrics()">
-            <i class="bi bi-chevron-left icon"></i> Ẩn lời bài hát
+            <i class="bi bi-chevron-left icon"></i>
           </button>
+          <strong>Lời bài hát</strong>
         </div>
         <div id="lyrics-content"></div>
       </div>
     </div>
-
-    <!-- Liên kết đến tệp JavaScript riêng biệt -->
     <script src="./tracks/tracks.js"></script>
     <script src="./js/script.js"></script>
   </body>
