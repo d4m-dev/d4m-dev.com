@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Player</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
-
+    <!-- Liên kết đến tệp CSS riêng biệt -->
     <link rel="stylesheet" href="./css/style.css" />
-    <!-- social links for refinedguides.com -->
+       <!-- social links for d4m-dev.github.io-->
     <script
       src="./contact/contact.js"
       defer
@@ -19,8 +19,8 @@
   <body>
     <div class="player">
       <div class="header">
-        <button class="menu">
-          <i class="bi bi-grid-fill"></i>
+        <button class="lyric">
+          <i class="bi bi-file-earmark-music"></i>
         </button>
 
         <strong>Now Playing</strong>
@@ -77,9 +77,26 @@
 
         <div class="playlist-content"></div>
       </div>
+
+      <div class="container">
+        <button class="download">
+          <i class="bi bi-download"></i>
+        </button>
+      </div>
+
+      <!-- Phần hiển thị lời bài hát -->
+      <div id="lyrics" class="lyrics">
+        <div>
+          <button class="hide-lyric" onclick="toggleLyrics()">
+            <i class="bi bi-chevron-left icon"></i> Ẩn lời bài hát
+          </button>
+        </div>
+        <div id="lyrics-content"></div>
+      </div>
     </div>
 
+    <!-- Liên kết đến tệp JavaScript riêng biệt -->
     <script src="./tracks/tracks.js"></script>
-    <script src="./script/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
