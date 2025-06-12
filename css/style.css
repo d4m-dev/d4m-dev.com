@@ -287,6 +287,21 @@ input::-webkit-slider-thumb {
   display: block;
 }
 
+.lyric-header {
+  position: relative;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+/* Nút ẩn lời bài hát */
+.lyric-header button {
+  font-size: 1.25rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .show-lyric:hover {
   background-color: #45a049;
 }
