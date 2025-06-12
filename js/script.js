@@ -1,9 +1,7 @@
 //* state
-
 const state = { activeTrack: 0, initPlay: false };
 
 //* selectors
-
 const audio = new Audio();
 
 const ui = {
@@ -17,6 +15,7 @@ const ui = {
   prevBtn: document.querySelector(".prev"),
   nextBtn: document.querySelector(".next"),
   playPauseBtn: document.querySelector(".play-pause"),
+  lyricBtn: document.querySelector(".lyric"),  // Nút lyric để hiển thị lời bài hát
 
   // text and image
   playList: document.querySelector(".playlist"),
@@ -28,8 +27,8 @@ const ui = {
   duration: document.querySelector(".duration"),
 };
 
-//* event listeners
 
+//* event listeners
 const setupEventListeners = () => {
   document.addEventListener("DOMContentLoaded", loadTrack);
 
@@ -42,6 +41,9 @@ const setupEventListeners = () => {
   ui.showPlayListBtn.addEventListener("click", showPlayList);
   ui.hidePlayListBtn.addEventListener("click", hidePlayList);
 
+  // lyric button event
+  ui.lyricBtn.addEventListener("click", showLyric); // Gọi hàm showLyric khi nhấn nút lyric
+
   // audio events
   audio.addEventListener("ended", nextTrack);
   audio.addEventListener("timeupdate", updateTime);
@@ -52,6 +54,29 @@ const setupEventListeners = () => {
 };
 
 //* event handlers
+
+const showLyric = () => {
+  const currentTrack = tracks[state.activeTrack]; // Lấy track hiện tại
+  fetch(currentTrack.lyric)  // Lấy lời bài hát từ URL trong `lyric`
+    .then(response => response.text())  // Chuyển phản hồi thành văn bản
+    .then(data => {
+      var content = document.getElementById('lyrics-content');
+      content.innerHTML = data;  // Hiển thị lời bài hát vào phần tử
+      toggleLyrics();  // Mở phần lời bài hát khi có dữ liệu
+    })
+    .catch(error => {
+      document.getElementById('lyrics-content').textContent = 'Có lỗi khi tải văn bản: ' + error.message;
+      toggleLyrics();  // Mở phần lời bài hát khi không có dữ liệu
+    });
+};
+
+// Hàm để bật/tắt phần lời bài hát
+function toggleLyrics() {
+  var lyrics = document.getElementById('lyrics');
+  lyrics.classList.toggle('open'); // Thêm hoặc bỏ class 'open' khi nhấn nút
+}
+
+// Các hàm khác như playPauseTrack, loadTrack, updateVolume v.v...
 
 const updateVolume = () => {
   audio.volume = ui.volumeBar.value / 100;
@@ -166,6 +191,23 @@ const renderPlayList = () => {
     ui.playListContent.appendChild(item);
   });
 };
+
+// Xử lý việc tải bài hát đang phát khi nhấn vào nút Download
+document.querySelector('.download').addEventListener('click', function () {
+  // Lấy thông tin bài hát đang phát
+  const track = tracks[state.activeTrack];
+  // Tạo một thẻ <a> để thực hiện tải tệp
+  const link = document.createElement("a");
+        
+  // Đường dẫn tới tệp MP3
+  link.href = track.path; 
+        
+  // Tên tệp khi tải về
+  link.download = track.name; 
+        
+  // Mô phỏng hành động click vào thẻ <a> để tải tệp
+  link.click(); 
+});
 
 renderPlayList();
 setupEventListeners();
