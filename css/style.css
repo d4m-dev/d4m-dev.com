@@ -287,6 +287,10 @@ input::-webkit-slider-thumb {
   display: block;
 }
 
+.show-lyric:hover {
+  background-color: #45a049;
+}
+
 .lyric-header {
   position: relative;
   text-align: center;
@@ -300,26 +304,6 @@ input::-webkit-slider-thumb {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.show-lyric:hover {
-  background-color: #45a049;
-}
-
-/* Nút ẩn lời bài hát */
-.hide-lyric {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: var(--background-color);
-  color: var(--main-color);
-  border: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  position: absolute; /* Đặt nút ở vị trí tuyệt đối */
-  right: 20px; /* Di chuyển nút ra ngoài bên phải */
-  top: 20px; /* Đặt nút ở phía trên cùng */
-  z-index: 10; /* Đảm bảo nút luôn ở trên */
 }
 
 .hide-lyric:hover {
@@ -355,4 +339,4 @@ input::-webkit-slider-thumb {
 #lyrics-content {
   white-space: pre-wrap;  /* Giữ nguyên khoảng trắng và ngắt dòng */
   word-wrap: break-word;  /* Đảm bảo từ dài không bị tràn ra ngoài */
-}
+} */
