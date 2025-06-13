@@ -1,4 +1,3 @@
-// Mảng track 1
 const tracks = [
   {
     name: "Hay Là Chúng Ta Cứ Như Vậy Một Vạn Năm",
@@ -67,7 +66,7 @@ const tracks = [
     name: "Thương Thì Thôi REMIX",
     artist: "Jank",
     artwork: "https://i.postimg.cc/v8Wk4gJp/1.jpg",
-    path: ".https://github.com/d4m-dev/media/raw/refs/heads/main/thuongthithoi/2.mp3",
+    path: "https://github.com/d4m-dev/media/raw/refs/heads/main/thuongthithoi/2.mp3",
     lyric: "https://raw.githubusercontent.com/d4m-dev/media/refs/heads/main/thuongthithoi/1.rlc",
   },
   {
