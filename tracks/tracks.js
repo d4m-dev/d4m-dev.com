@@ -85,8 +85,8 @@ const tracks = [
   },
   {
     name: "Đào Hoa Nặc",
-    artist: "旺仔小乔",
-    artwork: "https://i.postimg.cc/htC0JcPF/1.jpg",
+    artist: "Đặng Tử Kỳ | Thượng Cổ Tình Ca OST",
+    artwork: "https://i.postimg.cc/ncNpJGKR/1.jpg",
     path: "https://github.com/d4m-dev/media/raw/refs/heads/main/daohoanac/2.mp3",
     lyric: "https://raw.githubusercontent.com/d4m-dev/media/refs/heads/main/daohoanac/1.lrc",
   },
